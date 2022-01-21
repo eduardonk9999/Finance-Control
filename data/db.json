@@ -1,0 +1,22 @@
+{
+  "finances": [
+    {
+      "title": "Freela",
+      "valor": "1000",
+      "categoria": "Entrada",
+      "data": "11/02/2022"
+    },
+    {
+      "title": "Salario",
+      "valor": "12000",
+      "categoria": "Entrada",
+      "data": "02/01/2022"
+    },
+    {
+      "title": "Cinema",
+      "valor": "40",
+      "categoria": "Saida",
+      "data": "20/01/2022"
+    }
+  ]
+}
