@@ -4,19 +4,50 @@
       "title": "Freela",
       "valor": "1000",
       "categoria": "Entrada",
-      "data": "11/02/2022"
+      "data": "11/02/2022",
+      "id": 1
     },
     {
       "title": "Salario",
       "valor": "12000",
       "categoria": "Entrada",
-      "data": "02/01/2022"
+      "data": "02/01/2022",
+      "id": 2
     },
     {
       "title": "Cinema",
       "valor": "40",
       "categoria": "Saida",
-      "data": "20/01/2022"
+      "data": "20/01/2022",
+      "id": 3
+    },
+    {
+      "title": "Jantar",
+      "valor": "100",
+      "data": "05/01/2022",
+      "categoria": "Saida",
+      "id": 4
+    },
+    {
+      "title": "Venda do Celular",
+      "valor": "2500",
+      "data": "02/01/2022",
+      "categoria": "",
+      "id": 5
+    },
+    {
+      "title": "Venda do Noot",
+      "valor": "5000",
+      "data": "11/01/2022",
+      "categoria": "",
+      "id": 6
+    },
+    {
+      "title": "Compras super mercado",
+      "valor": "300",
+      "data": "07/01/2022",
+      "categoria": "Saida",
+      "id": 7
     }
   ]
 }
