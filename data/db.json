@@ -22,27 +22,6 @@
       "id": 3
     },
     {
-      "title": "Jantar",
-      "valor": "100",
-      "data": "05/01/2022",
-      "categoria": "Saida",
-      "id": 4
-    },
-    {
-      "title": "Venda do Celular",
-      "valor": "2500",
-      "data": "02/01/2022",
-      "categoria": "",
-      "id": 5
-    },
-    {
-      "title": "Venda do Noot",
-      "valor": "5000",
-      "data": "11/01/2022",
-      "categoria": "",
-      "id": 6
-    },
-    {
       "title": "Compras super mercado",
       "valor": "300",
       "data": "07/01/2022",
