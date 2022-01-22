@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 const Saldo = () => {
-  const [valores, setValores] = useState([]);
   const [valortotal, setValorTotal] = useState([]);
 
   useEffect(() => {
@@ -10,24 +9,29 @@ const Saldo = () => {
         return res.json()
       })
       .then(data => {
-        const sum = data.reduce((acumulador, valoratual) => acumulador + Number(valoratual.valor), 0)
-        setValores(sum)
+        
         setValorTotal(data)
       })
   }, []);
 
 
   const totaldeSaidas = valortotal.filter(saida => saida.categoria === 'Saida')
-  .reduce((acc, item) => acc + Number(item.valor), 0)
+  .reduce((acc, item) => acc + Number(item.valor), 0);
+
+  const totaldeEntradas = valortotal.filter(entrada => entrada.categoria === 'Entrada')
+  .reduce((acc, item) => acc + Number(item.valor), 0);
 
 
   console.log(totaldeSaidas)
-  console.log(valores)
+  console.log(totaldeEntradas)
+ 
 
 
   return( 
     <>
-     <span>{(valores - totaldeSaidas)}</span>
+     {
+      totaldeEntradas - totaldeSaidas
+     }
     </>
   )
 }
