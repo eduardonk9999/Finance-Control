@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 const Saldo = () => {
   const [valortotal, setValorTotal] = useState([]);
 
+
   useEffect(() => {
     fetch('http://localhost:8088/finances')
       .then(res => {
@@ -22,8 +23,9 @@ const Saldo = () => {
   .reduce((acc, item) => acc + Number(item.valor), 0);
 
 
-  console.log(totaldeSaidas)
-  console.log(totaldeEntradas)
+
+
+
  
 
 
