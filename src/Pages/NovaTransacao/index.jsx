@@ -29,7 +29,7 @@ const Transacao = () => {
         setData('');
       })
     } else {
-      
+      console.log('nao passo')
       alert('preencher form')
     } 
   }
