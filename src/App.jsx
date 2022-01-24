@@ -10,6 +10,7 @@ function App() {
     <AppProvider>
       <Router>
         <Header />
+        
         <Rotas />
       </Router>
     </AppProvider>
