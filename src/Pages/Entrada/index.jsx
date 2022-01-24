@@ -6,7 +6,7 @@ const Entrada = () => {
   const [entradas, setEntradas] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8081/finances')
+    fetch('http://localhost:8088/finances')
       .then(res => {
         return res.json()
       })

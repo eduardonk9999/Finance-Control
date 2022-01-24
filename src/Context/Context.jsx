@@ -1,6 +1,6 @@
 import { createContext } from 'react';
 
 const AppContext = createContext({
-  financeFinal: '',
+  valorfinal: '',
 })
 export default AppContext;

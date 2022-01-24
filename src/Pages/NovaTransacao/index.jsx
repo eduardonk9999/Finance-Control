@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Saldo from '../../Components/Saldo';
 
 const Transacao = () => {
   const [ title, setTitle ] = useState('')
@@ -17,7 +18,7 @@ const Transacao = () => {
     }
 
     if(title.length > 0) {
-      fetch('http://localhost:8081/finances', {
+      fetch('http://localhost:8088/finances', {
         method: 'POST',
         headers: { "Content-Type" : "application/json" },
         body: JSON.stringify(newProdct)
@@ -35,20 +36,25 @@ const Transacao = () => {
 
 
   return(
-    <form onSubmit={handleSubmit}>
-      <h1>Cadastrar Transação</h1>
-      <input type="text"  placeholder="Titulo" value={title} onChange={(e) => setTitle(e.target.value)} />
-      <input type="number"  placeholder="Valor"  value={valor} onChange={(e) => setValor(e.target.value)} />
-      <select 
-        value={categoria}
-        onChange={(e) => setCategoria(e.target.value)}
-      >
-        <option value="Entrada">Entrada</option>
-        <option value="Saida">Saida</option>
-      </select>
-      <input type="text" placeholder="Data" value={data} onChange={(e) => setData(e.target.value)}/>
-      <button>Enviar</button>
-    </form>
+    
+    <>
+      <Saldo />
+      <form onSubmit={handleSubmit}>
+        <h1>Cadastrar Transação</h1>
+        
+        <input type="text"  placeholder="Titulo" value={title} onChange={(e) => setTitle(e.target.value)} />
+        <input type="number"  placeholder="Valor"  value={valor} onChange={(e) => setValor(e.target.value)} />
+        <select 
+          value={categoria}
+          onChange={(e) => setCategoria(e.target.value)}
+        >
+          <option value="Entrada">Entrada</option>
+          <option value="Saida">Saida</option>
+        </select>
+        <input type="text" placeholder="Data" value={data} onChange={(e) => setData(e.target.value)}/>
+        <button>Enviar</button>
+      </form>
+    </>
   )
 }
 

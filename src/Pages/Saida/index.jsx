@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
+import Saldo from '../../Components/Saldo';
 
 const Saida = () => {
   const [saidas, setSaidas] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8081/finances')
+    fetch('http://localhost:8088/finances')
       .then(res => {
         return res.json()
       })
@@ -16,6 +17,7 @@ const Saida = () => {
   return(
     <>
       <h1>Saidas</h1>
+      <Saldo />
       <table>
         <thead>
           <tr>

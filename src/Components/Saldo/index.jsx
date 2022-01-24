@@ -4,7 +4,7 @@ const Saldo = () => {
   const [valortotal, setValorTotal] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8081/finances')
+    fetch('http://localhost:8088/finances')
       .then(res => {
         return res.json()
       })
@@ -30,7 +30,10 @@ const Saldo = () => {
   return( 
     <>
      {
-      totaldeEntradas - totaldeSaidas
+      <div>
+        <h1>Saldo</h1>
+        <h2>{totaldeEntradas - totaldeSaidas}</h2>
+      </div>
      }
     </>
   )
