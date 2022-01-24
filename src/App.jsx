@@ -2,18 +2,19 @@ import React from "react"
 import { BrowserRouter as Router} from 'react-router-dom';
 import Rotas from './routes';
 import Header from './Components/Header'
-import AppProvider from "./Context/Provider";
+
+import { StatusProvider } from "./Context/SatusContext";
 
 
 function App() {
   return (
-    <AppProvider>
+    <StatusProvider>
       <Router>
         <Header />
         
         <Rotas />
       </Router>
-    </AppProvider>
+    </StatusProvider>
   )
 }
 

@@ -8,53 +8,39 @@
       "id": 1
     },
     {
-      "title": "Compras",
-      "valor": "100",
+      "title": "Freela",
+      "valor": "500",
       "data": "",
-      "categoria": "Saida",
+      "categoria": "Entrada",
       "id": 2
     },
     {
-      "title": "PAo",
-      "valor": "100",
+      "title": "TENIS",
+      "valor": "500",
       "data": "",
       "categoria": "Saida",
       "id": 3
     },
     {
-      "title": "Freela",
+      "title": "Pao",
       "valor": "100",
       "data": "",
-      "categoria": "Entrada",
+      "categoria": "Saida",
       "id": 4
     },
     {
-      "title": "Mercados",
+      "title": "Tenis",
       "valor": "100",
       "data": "",
       "categoria": "Saida",
       "id": 5
     },
     {
-      "title": "Açougue",
-      "valor": "100",
-      "data": "",
-      "categoria": "Saida",
-      "id": 6
-    },
-    {
       "title": "PAo",
       "valor": "100",
       "data": "",
       "categoria": "Saida",
-      "id": 7
-    },
-    {
-      "title": "farmaxia",
-      "valor": "100",
-      "data": "",
-      "categoria": "Saida",
-      "id": 8
+      "id": 6
     }
   ]
 }
