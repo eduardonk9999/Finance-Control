@@ -23,9 +23,10 @@ const Saldo = () => {
   .reduce((acc, item) => acc + Number(item.valor), 0);
 
 
+  console.log(totaldeSaidas)
+  console.log(totaldeEntradas)
 
-
-
+  
  
 
 
