@@ -1,5 +1,6 @@
 
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+
 import Entrada from './Pages/Entrada';
 import Home from './Pages/Home';
 import Transacao from './Pages/NovaTransacao';
@@ -23,7 +24,7 @@ function Rotas(){
             <Transacao />
           </Route>
         </Switch>
-     
+      
   
   )
 }

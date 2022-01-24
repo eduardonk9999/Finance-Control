@@ -1,14 +1,22 @@
-import { useState } from "react";
-import Saldo from '../../Components/Saldo';
+import { useEffect, useState } from "react";
+import { useContext } from "react";
+import AppContext from "../../Context/Context";
+
+
 
 const Transacao = () => {
   const [ title, setTitle ] = useState('')
   const [ valor, setValor ] = useState('')
   const [ data, setData ] = useState('')
   const [ categoria, setCategoria ] = useState('')
+  const {setValorEnd, valorEND} = useContext(AppContext)
 
+  const [valortotal, setValorTotal] = useState([]);
+  
   const handleSubmit = (e) => {
     e.preventDefault()
+    
+
 
     const newProdct = {
       title: title,
@@ -32,13 +40,41 @@ const Transacao = () => {
       console.log('nao passo')
       alert('preencher form')
     } 
+
+
+    
   }
 
+  useEffect(() => {
+    fetch('http://localhost:8088/finances')
+      .then(res => {
+        return res.json()
+      })
+      .then(data => {
+        setValorTotal(data)
+        
+  
+        
+      })
+  }, []);
 
+ 
+
+  const totaldeSaidas = valortotal.filter(saida => saida.categoria === 'Saida')
+  .reduce((acc, item) => acc + Number(item.valor), 0);
+
+  const totaldeEntradas = valortotal.filter(entrada => entrada.categoria === 'Entrada')
+  .reduce((acc, item) => acc + Number(item.valor), 0);
+
+
+  
+
+
+  setValorEnd(totaldeEntradas, totaldeSaidas)
   return(
     
     <>
-      <Saldo />
+      {valorEND}
       <form onSubmit={handleSubmit}>
         <h1>Cadastrar Transação</h1>
         
@@ -52,7 +88,10 @@ const Transacao = () => {
           <option value="Saida">Saida</option>
         </select>
         <input type="text" placeholder="Data" value={data} onChange={(e) => setData(e.target.value)}/>
-        <button>Enviar</button>
+        <button
+         
+        >
+          Enviar</button>
       </form>
     </>
   )

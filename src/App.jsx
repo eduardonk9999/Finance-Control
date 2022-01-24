@@ -4,16 +4,15 @@ import Rotas from './routes';
 import Header from './Components/Header'
 import AppProvider from "./Context/Provider";
 
+
 function App() {
   return (
-    <>
-      <AppProvider>
-        <Router>
-          <Header />
-          <Rotas />
-        </Router>
-      </AppProvider>
-    </>
+    <AppProvider>
+      <Router>
+        <Header />
+        <Rotas />
+      </Router>
+    </AppProvider>
   )
 }
 

@@ -1,6 +1,8 @@
-import { createContext } from 'react';
+import { createContext } from "react";
 
 const AppContext = createContext({
-  valorfinal: '',
+    setValorEnd: () => {},
+    valorEND: null,
 })
+
 export default AppContext;

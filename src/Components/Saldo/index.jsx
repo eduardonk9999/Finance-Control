@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
+import { useContext } from "react/cjs/react.development";
+
+import AppContext from '../../Context/Context';
 
 const Saldo = () => {
   const [valortotal, setValorTotal] = useState([]);
+  
 
 
   useEffect(() => {
@@ -23,9 +27,8 @@ const Saldo = () => {
   .reduce((acc, item) => acc + Number(item.valor), 0);
 
 
-  console.log(totaldeSaidas)
-  console.log(totaldeEntradas)
 
+ 
   
  
 
@@ -35,7 +38,7 @@ const Saldo = () => {
      {
       <div>
         <h1>Saldo</h1>
-        <h2>{totaldeEntradas - totaldeSaidas}</h2>
+        <h2></h2>
       </div>
      }
     </>

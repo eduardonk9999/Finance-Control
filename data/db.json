@@ -1,53 +1,60 @@
 {
   "finances": [
     {
-      "title": "Freela",
+      "title": "Salario",
       "valor": "1000",
+      "data": "",
       "categoria": "Entrada",
-      "data": "11/02/2022",
       "id": 1
     },
     {
-      "title": "Salario",
-      "valor": "12000",
-      "categoria": "Entrada",
-      "data": "02/01/2022",
+      "title": "Compras",
+      "valor": "100",
+      "data": "",
+      "categoria": "Saida",
       "id": 2
     },
     {
-      "title": "Cinema",
-      "valor": "40",
+      "title": "PAo",
+      "valor": "100",
+      "data": "",
       "categoria": "Saida",
-      "data": "20/01/2022",
       "id": 3
     },
     {
-      "title": "Compras super mercado",
-      "valor": "300",
-      "data": "07/01/2022",
+      "title": "Freela",
+      "valor": "100",
+      "data": "",
+      "categoria": "Entrada",
+      "id": 4
+    },
+    {
+      "title": "Mercados",
+      "valor": "100",
+      "data": "",
+      "categoria": "Saida",
+      "id": 5
+    },
+    {
+      "title": "Açougue",
+      "valor": "100",
+      "data": "",
+      "categoria": "Saida",
+      "id": 6
+    },
+    {
+      "title": "PAo",
+      "valor": "100",
+      "data": "",
       "categoria": "Saida",
       "id": 7
     },
     {
-      "title": "Mercado2",
+      "title": "farmaxia",
       "valor": "100",
-      "data": "22/01/2022",
+      "data": "",
       "categoria": "Saida",
       "id": 8
-    },
-    {
-      "title": "Jogos ",
-      "valor": "1000",
-      "data": "22/01/2022",
-      "categoria": "Saida",
-      "id": 9
-    },
-    {
-      "title": "Padaria",
-      "valor": "60",
-      "data": "24/01/2022",
-      "categoria": "Saida",
-      "id": 10
     }
   ]
 }
