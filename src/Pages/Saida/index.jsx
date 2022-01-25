@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Saldo from '../../Components/Saldo';
+
 
 const Saida = () => {
   const [saidas, setSaidas] = useState([]);
@@ -17,7 +17,7 @@ const Saida = () => {
   return(
     <>
       <h1>Saidas</h1>
-      <Saldo />
+    
       <table>
         <thead>
           <tr>

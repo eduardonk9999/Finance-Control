@@ -10,7 +10,7 @@ const Header = () => {
     
           <Link to="/entrada">entrada</Link>
           <Link to="/saida">saida</Link>
-          <Link to="/transacao">Nova transação</Link>
+          
       
       </nav>
     </header>
