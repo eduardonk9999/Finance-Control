@@ -20,27 +20,6 @@
       "data": "",
       "categoria": "Saida",
       "id": 3
-    },
-    {
-      "title": "Pao",
-      "valor": "100",
-      "data": "",
-      "categoria": "Saida",
-      "id": 4
-    },
-    {
-      "title": "Tenis",
-      "valor": "100",
-      "data": "",
-      "categoria": "Saida",
-      "id": 5
-    },
-    {
-      "title": "PAo",
-      "valor": "100",
-      "data": "",
-      "categoria": "Saida",
-      "id": 6
     }
   ]
 }
